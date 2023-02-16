@@ -1,5 +1,14 @@
 # Gradient Descent Linear Regression Model from Scratch
-This repository contains a custom implementation of a linear regression model using gradient descent. The implementation is written in Python and does not use any external libraries for the machine learning functionality.
+
+This repository contains a simple implementation of a linear regression model using the gradient descent algorithm with L2 regularization, built from scratch in Python without the use of external libraries. The model is designed to take in a set of input features and target values, and outputs a set of slope and intercept coefficients that can be used to predict new target values from new input features.
+
+## Installation
+
+To use this model, simply clone the repository to your local machine:
+
+```sh
+git clone https://github.com/<username>/<repository-name>.git
+
 
 ## How to Use
 To use the linear regression model, you can import the fit_linear_regression and predict_linear_regression functions from the linear_regression.py file:
