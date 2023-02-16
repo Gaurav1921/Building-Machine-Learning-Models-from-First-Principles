@@ -8,16 +8,47 @@ To use this model, simply clone the repository to your local machine:
 
 ```sh
 git clone https://github.com/<username>/<repository-name>.git
+```
 
 
-## How to Use
-To use the linear regression model, you can import the fit_linear_regression and predict_linear_regression functions from the linear_regression.py file:
+Usage
+To use the model, import the fit_linear_regression function from the linear_regression.py module, and pass in your input features and target values as NumPy arrays. Here's an example:
 
-<code>from linear_regression import fit_linear_regression, predict_linear_regression</code>
+```sh
+import numpy as np
+from linear_regression import fit_linear_regression, predict_linear_regression
 
-The fit_linear_regression function takes in an array of input features (X), an array of target values (y), the learning rate (alpha), the regularization parameter (lambda_), and the number of iterations to run the gradient descent algorithm (num_iterations). It returns a tuple containing the slope and intercept coefficients of the linear regression model.
+# Generate some sample data
+X = np.array([[1, 2], [3, 4], [5, 6]])
+y = np.array([3, 5, 7])
 
-The predict_linear_regression function takes in the slope and intercept coefficients (theta_0 and theta_1, respectively) and an array of input values (X), and returns an array of predicted output values.
+# Fit the linear regression model
+slope, intercept = fit_linear_regression(X, y, alpha=0.01, lambda_=0.1, num_iterations=1000)
+
+# Predict new target values
+X_new = np.array([[7, 8], [9, 10]])
+y_new = predict_linear_regression(X_new, slope, intercept)
+```
+
+## Documentation
+
+The linear_regression.py module contains two functions:
+
+"fit_linear_regression(X, y, alpha, lambda_, num_iterations)": Fits a linear regression model to the input data using gradient descent with L2 regularization.
+
+### Parameters:
+
++ X (array-like): An array of shape (n_samples, n_features) containing the input features.
++ y (array-like): An array of shape (n_samples,) containing the target values.
++ alpha (float): Learning rate for the gradient descent algorithm.
++ lambda_ (float): Regularization parameter for L2 regularization.
++ num_iterations (int): The number of iterations to run the gradient descent algorithm.
+
+### Returns:
+
++ tuple: A tuple containing the slope and intercept coefficients of the linear regression model.
+
+"predict_linear_regression(X, slope, intercept)": Predicts target values for new input features using the slope and intercept coefficients of a linear regression model.
 
 ## Modifying the Model
 You can modify the existing implementation to potentially improve the accuracy of the linear regression model. Some possible modifications include:
@@ -27,6 +58,9 @@ You can modify the existing implementation to potentially improve the accuracy o
 
 ## Contributing
 If you have any suggestions or improvements for the linear regression model, feel free to create a pull request or submit an issue.
+
+## Acknowledgements
+This implementation was inspired by the Andrew Ng's Machine Learning course on Coursera.
 
 ## License
 This project is licensed under the MIT License.
