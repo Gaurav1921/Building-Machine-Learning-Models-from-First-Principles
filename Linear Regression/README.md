@@ -5,6 +5,7 @@ This repository contains a custom implementation of a linear regression model us
 To use the linear regression model, you can import the fit_linear_regression and predict_linear_regression functions from the linear_regression.py file:
 
 <code>from linear_regression import fit_linear_regression, predict_linear_regression</code>
+
 The fit_linear_regression function takes in an array of input features (X), an array of target values (y), the learning rate (alpha), the regularization parameter (lambda_), and the number of iterations to run the gradient descent algorithm (num_iterations). It returns a tuple containing the slope and intercept coefficients of the linear regression model.
 
 The predict_linear_regression function takes in the slope and intercept coefficients (theta_0 and theta_1, respectively) and an array of input values (X), and returns an array of predicted output values.
