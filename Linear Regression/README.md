@@ -13,7 +13,7 @@ git clone https://github.com/<username>/<repository-name>.git
 
 ## Usage
 
-To use the model, import the fit_linear_regression function from the linear_regression.py module, and pass in your input features and target values as NumPy arrays. Here's an example:
+To use the model, import the fit_linear_regression function from the linear_regression_using_gradient_descent_and_regularization.py or linear_regression_using_gradient_descent.py <code>(use any one of the mentioned .py files and delete the other .py file which is not in use)</code> module, and pass in your input features and target values as NumPy arrays. Here's an example:
 
 ```sh
 import numpy as np
