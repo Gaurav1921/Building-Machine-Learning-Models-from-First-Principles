@@ -11,7 +11,8 @@ git clone https://github.com/<username>/<repository-name>.git
 ```
 
 
-Usage
+## Usage
+
 To use the model, import the fit_linear_regression function from the linear_regression.py module, and pass in your input features and target values as NumPy arrays. Here's an example:
 
 ```sh
