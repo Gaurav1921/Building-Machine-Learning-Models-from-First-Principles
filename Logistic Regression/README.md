@@ -5,7 +5,7 @@ This repository contains a Python implementation of logistic regression from scr
 To download the code, you can use git to clone this repository:
 
 ```sh
-git clone https://github.com/your_username/logistic-regression-from-scratch.git
+git clone https://github.com/<username>/<repository-name>.git
 ```
 This will create a local copy of the repository on your machine. You can then navigate to the repository directory and run the code.
 
