@@ -44,6 +44,25 @@ print(y_pred)
 
 In this example, we first load the training and test data from CSV files. The training data consists of features and binary labels, while the test data consists only of features. We then create an instance of the LogisticRegression class with a learning rate of 0.1 and 1000 iterations, and fit it to the training data. Finally, we use the trained model to predict the labels of the test data and print the results.
 
+## Documentation
+The logistic_regression.py module contains two functions:
+
+"fit_logistic_regression(X, y, alpha, lambda_, num_iterations)": Fits a logistic regression model to the input data using gradient descent with L2 regularization.
+
+## Parameters:
+
++ X (array-like): An array of shape (n_samples, n_features) containing the input features.
++ y (array-like): An array of shape (n_samples,) containing the target values.
++ alpha (float): Learning rate for the gradient descent algorithm.
++ lambda_ (float): Regularization parameter for L2 regularization.
++ num_iterations (int): The number of iterations to run the gradient descent algorithm.
+
+## Returns:
+
++ tuple: A tuple containing the weight coefficients of the logistic regression model.
+
+"predict_logistic_regression(X, weights)": Predicts target values for new input features using the weight coefficients of a logistic regression model.
+
 ## Improvements
 The basic implementation provided in logistic_regression.py can be improved in several ways to increase its accuracy:
 
@@ -52,5 +71,11 @@ The basic implementation provided in logistic_regression.py can be improved in s
 + Polynomial features: Add polynomial features to the input data to capture higher-order interactions between the features.
 + Ensemble methods: Combine multiple logistic regression models using bagging or boosting to improve accuracy.
 
-## Credits
-This implementation is based on the code from the "Machine Learning" course on Coursera by Andrew Ng.
+## Contributing
+If you have any suggestions or improvements for the linear regression model, feel free to create a pull request or submit an issue.
+
+## Acknowledgements
+This implementation was inspired by the Andrew Ng's Machine Learning course on Coursera.
+
+## License
+This project is licensed under the MIT License.
